@@ -1,0 +1,26 @@
+drop database if exists StudentDB;
+create database StudentDB;
+use StudentDB;
+drop table if exists Student;
+create table Student (pic varchar(100), sid integer not null, firstName varchar(25),lastName varchar(25), city varchar(100), street varchar(100), houseNum integer,zipCode integer, birthDate date, startTime integer, dept varchar(25),numOfCredits integer, avg float, fail integer, place varchar(7),constraint pkStudent primary key (sid));
+insert into Student values ('img/default-profile.gif', 444111110, 'George', 'Goldman', 'Indianapolis', 'Washington Street', '146', 60821, '1954-3-11', 1995, 'Computer Science', 144, 99.99, 0, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111111, 'Patrick', 'Goldman', 'Springfield', 'Bay Street', '87', 35743, '1993-9-20', 2015, 'Accounting', 60, 87.92, 1, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111112, 'Ray', 'Woo', 'Austin', 'Main Street', '141', 38580, '1972-9-8', 2011, 'Mathematics', 12, 74.62, 4, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111113, 'Joe', 'Smith', 'Atlanta', 'West Ford Street', '130', 80672, '1966-5-22', 2013, 'Computer Science', 139, 83.71, 0, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111114, 'Toni', 'Kennedy', 'Sacramento', 'Washington Street', '29', 95035, '1962-11-19', 1981, 'Computer Science', 78, 100.05, 3, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111115, 'Toni', 'Smith', 'Sacramento', 'Bay Street', '69', 99637, '1987-1-29', 2015, 'Computer Science', 35, 96.18, 5, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111116, 'Judy', 'Kennedy', 'Atlanta', 'Main Street', '6', 55430, '1953-10-28', 1973, 'Mathematics', 18, 86.76, 3, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111117, 'Rick', 'Chin', 'Austin', 'Bay Street', '100', 69782, '1999-4-16', 2015, 'Accounting', 92, 80.73, 3, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111118, 'Jean', 'Woo', 'Austin', 'Franklin Street', '128', 36500, '1962-4-21', 1982, 'Computer Science', 63, 64.69, 1, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111119, 'John', 'Peterson', 'Indianapolis', 'Main Street', '12', 96639, '1977-7-16', 2015, 'Accounting', 5, 70.21, 7, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111120, 'Josh', 'Peterson', 'Indianapolis', 'West Ford Street', '31', 21888, '1995-7-26', 2015, 'Mathematics', 97, 67.98, 0, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111121, 'Frank', 'Bedat', 'Springfield', 'Bay Street', '48', 32272, '1969-3-25', 1990, 'Accounting', 152, 70.06, 6, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111122, 'Joe', 'Jones', 'Austin', 'Main Street', '129', 97863, '1954-2-28', 1992, 'Mathematics', 25, 67.12, 0, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111123, 'George', 'Goldman', 'Atlanta', 'Bay Street', '105', 96288, '1955-7-18', 1986, 'Computer Science', 88, 55.44, 5, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111124, 'John', 'Templeton', 'Indianapolis', 'Bay Street', '35', 83217, '1976-4-9', 2014, 'Mathematics', 33, 71.33, 3, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111125, 'Francis', 'Bedat', 'Sacramento', 'Main Street', '103', 46195, '1994-4-26', 2015, 'Computer Science', 81, 58.52, 4, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111126, 'Alex', 'Chang', 'Springfield', 'West Ford Street', '86', 55815, '1998-11-30', 2015, 'Accounting', 152, 99.39, 3, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111127, 'Francis', 'Franklin', 'Sacramento', 'Bay Street', '111', 85227, '1995-7-14', 2015, 'Accounting', 75, 89.67, 0, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111128, 'Ray', 'Peterson', 'Sacramento', 'Main Street', '41', 25394, '1957-2-3', 1984, 'Accounting', 24, 73.77, 7, 'no rank')
+insert into Student values ('img/default-profile.gif', 444111129, 'Jean', 'Stevenson', 'Sacramento', 'Washington Street', '127', 60784, '1951-11-20', 1972, 'Accounting', 28, 97.53, 5, 'no rank')
+commit;

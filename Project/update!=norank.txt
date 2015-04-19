@@ -1,0 +1,13 @@
+UPDATE Student
+
+SET place =
+
+(CASE WHEN numOfCredits < 60 THEN 'no rank'
+
+ELSE place + 1 END)
+
+WHERE dept = 'Mathematics' 
+
+AND place != 'no rank'
+
+AND place > 1;

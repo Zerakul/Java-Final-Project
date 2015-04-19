@@ -1,0 +1,20 @@
+SELECT sid, rank
+FROM (
+SELECT s1.sid,COUNT(s2.avg) rank,s1.numOfCredits,s1.avg
+FROM Student s1, Student s2 
+
+WHERE s1.dept = 'Mathematics' and s2.dept = 'Mathematics' 
+
+AND s2.avg >= s1.avg
+
+AND s1.place = 'no rank' 
+GROUP BY s1.sid) s3
+
+WHERE numOfCredits > 30
+
+ORDER BY avg desc
+
+// for all students found above
+UPDATE Student
+SET place = (rs.getString(2))
+WHERE sid = (rs.getString(1))
